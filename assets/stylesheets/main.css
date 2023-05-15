@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  background: url("./../images/3.jpg") no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    background: url("./../images/6.png");
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.main .translator {
+  width: 50%;
+  height: 100vh;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .main .translator {
+    width: 80%;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+.main .translator .main_text {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 55px;
+  text-align: center;
+  width: 600px;
+}
+
+@media screen and (max-width: 600px) {
+  .main .translator .main_text {
+    width: 300px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 55px;
+  }
+}
+
+.main .translator .main_text span {
+  color: red;
+}
+
+.main .translator .input {
+  margin-top: 50px;
+}
+
+.main .translator .input input {
+  border: 2px solid black;
+  padding: 20px;
+  width: 400px;
+  border-radius: 50px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  .main .translator .input input {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 8px;
+    width: 150px;
+  }
+}
+
+.main .translator .input .translate_btn {
+  padding: 20px;
+  border: 2px solid black;
+  margin-left: -4px;
+  background: blue;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .main .translator .input .translate_btn {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+.main .translator .translated_word {
+  margin-top: 50px;
+}
+
+.main .translator .translated_word p.text {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+  color: green;
+}
+
+@media screen and (max-width: 600px) {
+  .main .translator .translated_word p.text {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+.main .translator .translated_word .words {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .translator .translated_word .words p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 180.5%;
+  color: #1912e8;
+}
+
+@media screen and (max-width: 600px) {
+  .main .translator .translated_word .words p {
+    font-weight: 600;
+    font-size: 28px;
+  }
+}
+
+.main .translator .translated_word .words .img {
+  width: 80px;
+  margin: 0 10px;
+}
+
+.main .translator .translated_word .words .img img {
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

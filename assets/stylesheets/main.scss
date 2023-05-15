@@ -1,0 +1,147 @@
+// base
+@import "./base/reset", "./base/mixins";
+
+.main {
+  background: url("./../images/3.jpg") no-repeat;
+  background-size: cover;
+  @include flexBox(flex-end, flex-start);
+  background-attachment: fixed;
+
+  @include mobile {
+    background: url("./../images/6.png");
+    align-items: center;
+    justify-content: center;
+  }
+
+  .translator {
+    width: 50%;
+    height: 100vh;
+    padding: 50px;
+    // background-color: blue;
+    @include flexBox(center, center);
+    flex-direction: column;
+
+    @include mobile {
+      width: 80%;
+      padding: 0;
+      position: fixed;
+      bottom: 0;
+    }
+
+    .main_text {
+      font-family: "Philosopher";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 55px;
+      text-align: center;
+      width: 600px;
+
+      @include mobile {
+        width: 300px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 55px;
+      }
+
+      span {
+        color: red;
+      }
+    }
+
+    .input {
+      margin-top: 50px;
+
+      input {
+        border: 2px solid black;
+        padding: 20px;
+        width: 400px;
+        border-radius: 50px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: none;
+        outline: none;
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+
+        @include mobile {
+          font-weight: 700;
+          font-size: 14px;
+          padding: 8px;
+          width: 150px;
+        }
+      }
+
+      .translate_btn {
+        padding: 20px;
+        border: 2px solid black;
+        margin-left: -4px;
+        background: blue;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        // line-height: 18px;
+        color: white;
+        cursor: pointer;
+
+        @include mobile {
+          font-weight: 700;
+          font-size: 14px;
+          padding: 8px;
+        }
+      }
+    }
+
+    .translated_word {
+      margin-top: 50px;
+
+      p.text {
+        font-family: "Philosopher";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 50px;
+        color: green;
+
+        @include mobile {
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 50px;
+        }
+      }
+
+      .words {
+        margin-top: 30px;
+        @include flexBox(space-between, center);
+
+        p {
+          font-family: "Poppins", sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 38px;
+          line-height: 180.5%;
+          color: rgb(25, 18, 232);
+
+          @include mobile {
+            font-weight: 600;
+            font-size: 28px;
+          }
+        }
+
+        .img {
+          width: 80px;
+          margin: 0 10px;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
