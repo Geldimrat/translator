@@ -216,6 +216,7 @@ function search_fn() {
     }
 
 
+
     input_word_text.innerHTML = input_word
     trans_word_text.innerHTML = translated_word
 
