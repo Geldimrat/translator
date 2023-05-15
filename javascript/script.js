@@ -203,13 +203,13 @@ function search_fn() {
         }
     })
 
-    if (transed_word.name_en == entered_word.value) {
+    if (transed_word.name_en.toUpperCase() == entered_word.value.toUpperCase()) {
         input_word = transed_word.name_en
     } else {
         input_word = transed_word.name_sp
     }
 
-    if (transed_word.name_sp == entered_word.value) {
+    if (transed_word.name_sp.toUpperCase() == entered_word.value.toUpperCase()) {
         translated_word = transed_word.name_en
     } else {
         translated_word = transed_word.name_sp
